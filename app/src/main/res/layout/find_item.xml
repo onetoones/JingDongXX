@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/find_tx"
+            android:layout_centerVertical="true"
+            fresco:placeholderImage="@mipmap/raw"
+            fresco:roundAsCircle="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+<LinearLayout
+    android:layout_toRightOf="@+id/find_tx"
+    android:layout_marginLeft="5dp"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout2">
+<TextView
+    android:id="@+id/find_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#f00"
+    android:text="11111111111111111"/>
+
+    <TextView
+        android:id="@+id/find_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:text="11111111111111111" />
+</LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView
+           android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/find_nr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="18sp"
+        android:text="1111111111111"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/find_tpnr"
+        android:layout_marginTop="6dp"
+        android:layout_width="370dp"
+        fresco:placeholderImage="@mipmap/write"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>

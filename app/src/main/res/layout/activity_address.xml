@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jingdongxx.my.view.AddressActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="收货地址"
+        android:textSize="18sp"
+        android:id="@+id/textView6" />
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ressadd_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入名字" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号："
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ress_phone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址："
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ress_dz"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入常用地址" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ress_tj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="添加地址" />
+
+    <Button
+        android:id="@+id/ress_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ress_tj"
+        android:layout_alignBottom="@+id/ress_tj"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        android:text="查看地址" />
+
+</RelativeLayout>

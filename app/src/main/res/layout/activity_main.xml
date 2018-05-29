@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jingdongxx.MainActivity">
+
+<!--  <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.hjm.bottomtabbar.BottomTabBar>-->
+<com.example.jingdongxx.CustomViewPager
+    android:id="@+id/main_vp"
+    android:layout_above="@+id/radio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></com.example.jingdongxx.CustomViewPager>
+<RadioGroup
+
+    android:layout_alignParentBottom="true"
+    android:id="@+id/radio"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="60dp">
+    <ImageView
+        android:button="@null"
+        android:id="@+id/home"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@mipmap/ac1"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/classs"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@mipmap/abw"
+        android:layout_height="match_parent"
+        android:button="@null"/>
+    <ImageView
+        android:id="@+id/find"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@mipmap/aby"
+        android:layout_height="match_parent"
+        android:button="@null"/>
+    <ImageView
+        android:id="@+id/shopping"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@mipmap/abu"
+        android:layout_height="match_parent"
+        android:button="@null"/>
+    <ImageView
+        android:id="@+id/my"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@mipmap/ac2"
+        android:layout_height="match_parent"
+        android:button="@null"/>
+
+
+</RadioGroup>
+</RelativeLayout>
